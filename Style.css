@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+.libre-baskerville-bold 
+{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-sans{
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: light;
+}
+
+body
+{
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    background-image: url(Fotos/ImagemTeste1.jpg);
+    height:350px;
+    background-size: cover;           
+    background-position: center;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+header > h1
+{
+ font-family: "Libre Baskerville", serif;
+}
+
+header > h2
+{
+ font-family: "Libre Baskerville", serif;
+ font-weight: 400;
+ font-style: normal;
+}
+.menu-principal 
+{
+    background-color: #AE0011; 
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    border: 1px solid black;
+}
+
+.menu-principal ul 
+{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.menu-principal ul li a 
+{
+    display: block; 
+    padding: 15px 20px; 
+    color: black; 
+    text-decoration: none; 
+}
+.menu-principal .dropdown 
+{
+    position: relative;
+}
+
+.menu-principal .submenu 
+{
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    border: 1px solid #AE0011; 
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    min-width: 200px; 
+}
+
+.menu-principal .dropdown:hover > .submenu 
+{
+    display: block;
+}
+
+.menu-principal .submenu li 
+{
+    width: 100%; 
+}
+
+.menu-principal .submenu li a 
+{
+    padding: 12px 15px;
+    color: #333; 
+}
+
+.menu-principal .submenu li a:hover 
+{
+    background-color: #7a7575; 
+}
+main 
+{
+
+    text-align: center;
+}
+main h1 
+{
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imoveis-container 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+    padding: 20px; 
+}
+
+.imovel-card 
+{
+    display: flex;         
+    align-items: flex-start;  
+    gap: 5px;            
+}
+
+div.Imovel 
+{
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0; 
+}
+
+div.Imovel img 
+{
+    width: 100%;             
+    height: 100%;            
+    object-fit: cover;       
+}
+
+
+.imovel-info h3 
+{
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imovel-info p 
+{
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: light;
+    margin: 0;
+    color: #333;
+}
+
+footer 
+{
+    background-image: linear-gradient(to bottom, #AE0011, #333);
+    padding: 30px 20px;
+    color: white; 
+    display: flex;
+    justify-content: left; 
+}
+footer a 
+{
+    display: flex;      
+    align-items: center;  
+    color: white;          
+    text-decoration: none;  
+    font-size: 1.2em;      
+    margin-bottom: 15px;   
+    transition: transform 0.2s ease;
+}
+
+footer a:last-child 
+{
+    margin-bottom: 0;
+}
+
+footer a:hover 
+{
+    transform: scale(1.05); 
+    color: #ffdd57; 
+}
+
+footer i 
+{
+    font-size: 1.5em;     
+    margin-right: 10px;   
+    width: 30px;          
+}
+
+@media (max-width: 768px) 
+{
+  .imoveis-container 
+  {
+    grid-template-columns: 1fr;
+  }
+}
