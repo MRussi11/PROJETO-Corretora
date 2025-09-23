@@ -58,6 +58,9 @@ header
 header > h1
 {
  font-family: "Libre Baskerville", serif;
+ font-weight: 700;
+ color: black;
+ font-size: 50px;
 }
 
 header > h2
@@ -65,13 +68,14 @@ header > h2
  font-family: "Libre Baskerville", serif;
  font-weight: 400;
  font-style: normal;
+ font-size: 40px;
 }
 .menu-principal 
 {
     background-color: #AE0011; 
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
-    font-weight:400;
+    font-weight:800;
     font-style: normal;
     border: 1px solid black;
 }
@@ -88,7 +92,7 @@ header > h2
 {
     display: block; 
     padding: 15px 20px; 
-    color: black; 
+    color: white; 
     text-decoration: none; 
 }
 .menu-principal .dropdown 
@@ -103,8 +107,8 @@ header > h2
     top: 100%; 
     left: 0;
     background-color: white;
-    border: 1px solid #AE0011; 
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid black; 
+    box-shadow: 0px 4px 8px rgba(161, 136, 136, 0.1);
     min-width: 200px; 
 }
 
@@ -145,55 +149,209 @@ main h1
 
 .imoveis-container 
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 15px; 
-    padding: 20px; 
-}
-
-.imovel-card 
-{
-    display: flex;         
-    align-items: flex-start;  
-    gap: 5px;            
+  display: flex;             
+  justify-content: center;  
+  flex-wrap: wrap;          
+  gap: 50px;                
+  padding: 20px;          
+  margin-top: 20px;      
 }
 
 div.Imovel 
 {
-    border: 2px solid black;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    flex-shrink: 0; 
+  width: 250px;   
+  height: 250px;   
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;  
 }
 
 div.Imovel img 
 {
-    width: 100%;             
-    height: 100%;            
-    object-fit: cover;       
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-.imovel-info h3 
+.sobre-mim-container 
 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  border-radius: 15px;
 }
 
-.imovel-info p 
+.sobre-mim-contorno
 {
-    font-family: "Merriweather Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: light;
-    margin: 0;
-    color: #333;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 5px; 
+  border-radius: 20px; 
+  background: linear-gradient(to bottom, #AE0011, #1c1c1c);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.foto-perfil img 
+{
+  width: 180px;         
+  height: 180px;        
+  border-radius: 50%;    
+  object-fit: cover;     
+  border: 4px solid #fff;
+  margin-right: 40px;    
+}
+
+.texto-perfil h2 
+{
+  margin-top: 0;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.texto-perfil p 
+{
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: light;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: justify; 
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) 
+{
+  .sobre-mim-container {
+    flex-direction: column;
+    text-align: center;     
+    padding: 30px;
+  }
+
+  .foto-perfil img 
+  {
+    margin-right: 0;       
+    margin-bottom: 20px;    
+  }
+
+  .texto-perfil p 
+  {
+    text-align: center;
+  }
+}
+
+.depoimentos-secao 
+{
+  width: 100%;
+  padding: 60px 0; 
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.titulo-secao 
+{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 40px; 
+  font-size: 36px; 
+}
+
+.swiper 
+{
+  width: 100%; 
+  max-width: 1000px;
+  padding: 20px 60px;
+}
+
+.testimonial-card 
+{
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  padding: 35px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  min-height:300px; 
+}
+
+.testimonial-card blockquote 
+{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+  position: relative;
+  padding-left: 35px; 
+}
+
+.testimonial-card blockquote::before 
+{
+  content: '“';
+  font-family: Georgia, serif;
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: -10px;
+  top: -30px;
+}
+
+.testimonial-card footer 
+{
+  margin-top: 20px;
+  padding: 20px; 
+  border-radius: 10px; 
+  background: linear-gradient(to right, #AE0011, #87000d);
+  display: flex;                
+  justify-content: space-between;
+  align-items: center;        
+}
+
+.testimonial-card cite 
+{
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.testimonial-card small 
+{
+  color: #f0f0f0;
+  opacity: 0.8;   
+  font-style: italic;
+}
+
+.swiper-button-prev,
+.swiper-button-next 
+{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  top: 55%; 
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after 
+{
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c1c1c;
 }
 
 footer 
@@ -223,7 +381,7 @@ footer a:last-child
 footer a:hover 
 {
     transform: scale(1.05); 
-    color: #ffdd57; 
+    color: rgba(243, 20, 4, 0.452); 
 }
 
 footer i 
@@ -239,4 +397,200 @@ footer i
   {
     grid-template-columns: 1fr;
   }
+}
+
+.imovel-detalhes-container 
+{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.imovel-detalhes-container h1 
+{
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+}
+
+.imovel-layout 
+{
+    display: flex;
+    gap: 40px;
+}
+
+.imovel-coluna-fotos 
+{
+    flex: 1;
+}
+
+#imovel-imagem-principal 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.galeria-fotos 
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria-miniatura 
+{
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.galeria-miniatura:hover 
+{
+    transform: scale(1.05);
+    border-color: #AE0011;
+}
+
+.imovel-coluna-info 
+{
+    flex: 1; 
+    text-align: left;
+}
+
+.imovel-coluna-info h2 
+{
+    font-family: "Playfair Display", serif;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #AE0011;
+    padding-bottom: 10px;
+}
+
+.detalhes-lista 
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    font-family: "Roboto Slab", serif;
+}
+
+.detalhes-lista li 
+{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.detalhes-lista i 
+{
+    color: #AE0011;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#imovel-descricao 
+{
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.imovel-preco-box 
+{
+    background-color: #AE0011;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) 
+{
+    .imovel-layout 
+    {
+        flex-direction: column;
+    }
+}
+.pagina-categoria 
+{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.pagina-categoria h1 
+{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.grid-imoveis {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.imovel-grid-card 
+{
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imovel-grid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.imovel-grid-card a 
+{
+    text-decoration: none;
+    color: #333;
+}
+
+.imovel-grid-card img 
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.imovel-grid-card h3 
+{
+    padding: 20px;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aviso-nenhum-imovel 
+{
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+    grid-column: 1 / -1; 
 }

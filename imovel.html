@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Imóvel</title> <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Tânia Sedrez</h1>
+        <h2>corretora</h2>
+    </header>
+
+ <nav class="menu-principal">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="#">Imóveis</a>
+      <ul class="submenu">
+        <li><a href="categoria.html?tipo=terreno">Terreno</a></li>
+        <li><a href="categoria.html?tipo=baixo-padrao">Baixo padrão</a></li>
+        <li><a href="categoria.html?tipo=medio-padrao">Médio padrão</a></li>
+        <li><a href="categoria.html?tipo=alto-padrao">Alto padrão</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+    <main id="pagina-imovel">
+        <div class="imovel-detalhes-container">
+            <h1 id="imovel-titulo">Carregando...</h1>
+            
+            <div class="imovel-layout">
+                <div class="imovel-coluna-fotos">
+                    <img id="imovel-imagem-principal" src="" alt="Foto principal do imóvel">
+                    <div id="imovel-galeria" class="galeria-fotos">
+                        </div>
+                </div>
+
+                <div class="imovel-coluna-info">
+                    <h2>Detalhes</h2>
+                    <ul class="detalhes-lista">
+                        <li><i class="fas fa-bed"></i> <span id="imovel-quartos"></span> Quartos</li>
+                        <li><i class="fas fa-bath"></i> <span id="imovel-banheiros"></span> Banheiros</li>
+                        <li><i class="fas fa-car"></i> <span id="imovel-vagas"></span> Vagas</li>
+                        <li><i class="fas fa-ruler-combined"></i> <span id="imovel-area"></span></li>
+                    </ul>
+
+                    <h2>Descrição</h2>
+                    <p id="imovel-descricao"></p>
+
+                    <div class="imovel-preco-box">
+                        <span id="imovel-preco"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/taniasedrez_?igsh=MWxhenByZWp0c25weQ=="> <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="https://wa.me/5547999227221?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20imóveis." target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Whatsapp</span>
+            </a>
+            <a href="#"> <i class="fa-brands fa-youtube"></i>
+                <span>Youtube</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="carrega-imovel.js"></script>
+</body>
+</html>

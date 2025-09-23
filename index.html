@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -24,70 +25,116 @@
                 corretora
             </h2>
     </header>
-    <nav class="menu-principal">
+ <nav class="menu-principal">
   <ul>
-    <li><a href="#">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     
     <li class="dropdown">
       <a href="#">Imóveis</a>
       
       <ul class="submenu">
-        <li><a href="#">Comprar</a></li>
-        <li><a href="#">Alugar</a></li>
-        <li><a href="#">Lançamentos</a></li>
-        <li><a href="#">Anunciar Imóvel</a></li>
+        <li><a href="categoria.html?tipo=terreno">Terreno</a></li>
+        <li><a href="categoria.html?tipo=baixo-padrao">Baixo padrão</a></li>
+        <li><a href="categoria.html?tipo=medio-padrao">Médio padrão</a></li>
+        <li><a href="categoria.html?tipo=alto-padrao">Alto padrão</a></li>
       </ul>
     </li>
-    
-    <li><a href="#">Sobre Nós</a></li>
   </ul>
 </nav>
 <main>
   <h1>Imóveis em <strong>destaque</strong></h1>
-
-  <div class="imoveis-container">
-
+<div class="imoveis-container">
     <article class="imovel-card">
-      <div class="Imovel">
-        <img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 1">
-      </div>
-      <div class="imovel-info">
-        <h3>Casa na Velha</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque porro quisquam. Placeat magni, itaque odio corporis suscipit quos sint laudantium, neque nulla facilis amet ea et deleniti est cumque.</p>
-      </div>
+        <div class="Imovel">
+            <a href="imovel.html?id=1"><img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 1"></a>  
+        </div>
     </article>
 
     <article class="imovel-card">
-      <div class="Imovel">
-        <img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 2">
-      </div>
-      <div class="imovel-info">
-        <h3>Casa na Vila Nova</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quaerat deserunt harum quasi? Dolore, maxime dolores. Debitis aliquid reiciendis, tempore ad ab dolor, nulla at nostrum animi quaerat minima dignissimos.</p>
-      </div>
-    </article>
-
-     <article class="imovel-card">
-      <div class="Imovel">
-        <img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 1">
-      </div>
-      <div class="imovel-info">
-        <h3>Casa na Itoupava Norte</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptatum similique tenetur quaerat, odio perferendis, odit ducimus quibusdam est aspernatur laboriosam. Cum, ab aperiam. Enim repudiandae iure iste eligendi delectus?</p>
-      </div>
+        <div class="Imovel">
+          <a href="imovel.html?id=2"><img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 2"></a>   
+        </div>
     </article>
 
     <article class="imovel-card">
-      <div class="Imovel">
-        <img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 2">
-      </div>
-      <div class="imovel-info">
-        <h3>AP no Garcia</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error assumenda, cumque voluptatum fugit unde placeat! Ipsam rem quibusdam quam eligendi quaerat? Autem explicabo doloribus soluta cum rem ea aliquam debitis.</p>
-      </div>
+        <div class="Imovel">
+            <a href="imovel.html?id=3"><img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 3"></a>  
+        </div>
     </article>
+
+    <article class="imovel-card">
+        <div class="Imovel">
+            <a href="imovel.html?id=4"><img src="Fotos/ImovelTeste2.jpg" alt="Foto do Imóvel 4"></a>  
+        </div>
+    </article>
+</div>
+
+<div class ="sobre-mim-contorno">
+<div class="sobre-mim-container">
+    
+    <div class="foto-perfil">
+        <img src="Fotos/Tania.png" alt="">
     </div>
-    <footer>
+
+    <div class="texto-perfil">
+        <h2>Quem é Tânia Sedrez?</h2>
+        <p>
+          corretora de imóveis e apaixonada pelo que faço. Mais do que vender casas e apartamentos, acredito que meu trabalho é ajudar pessoas a encontrarem um espaço onde possam viver suas melhores histórias. Cada chave entregue representa um novo começo, uma conquista e, muitas vezes, a realização de um grande sonho.
+        </p>
+        <p>
+          Decidi mergulhar também no mundo digital para estar mais perto das pessoas, compartilhando dicas, experiências e valores que carrego comigo: honestidade, dedicação e amor pelo que faço.
+        </p>
+        <p>
+          Acredito que nunca é tarde para recomeçar, aprender e realizar. Por isso, sigo firme na minha missão de transformar simples transações em laços de confiança e felicidade.
+        </p>
+    </div>
+</div>
+</div>
+<section class="depoimentos-secao">
+    <h1 class="titulo-secao">Depoimentos</h1>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <blockquote>"Equipe muito solícita e ótimas condições para aluguel!! Ficamos em Blumenau por 2 anos, alugamos com a Mainha e NUNCA tivemos nenhum estresse... Muito obrigada por tudo, sucesso!!!"</blockquote>
+                    <footer>
+                        <cite>marlene hausmann</cite>
+                        <small>Blumenau/SC</small>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <blockquote>"Equipe muito solícita e ótimas condições para aluguel!! Ficamos em Blumenau por 2 anos, alugamos com a Mainha e NUNCA tivemos nenhum estresse... Muito obrigada por tudo, sucesso!!!"</blockquote>
+                    <footer>
+                        <cite>Fabiane Lindemann</cite>
+                        <small>Blumenau/SC</small>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <blockquote>"Atendimento impecável e super profissional. A Tayara sempre foi muito atenciosa e prestativa em todas as etapas do processo. Recomendo de olhos fechados!"</blockquote>
+                    <footer>
+                        <cite>Carlos Schmidt</cite>
+                        <small>Blumenau/SC</small>
+                    </footer>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</section>
+</main>
+
+<footer>
+
   <div class="social-links">
     <a href="https://www.instagram.com/taniasedrez_?igsh=MWxhenByZWp0c25weQ=="> <i class="fa-brands fa-instagram"></i>
       <span>Instagram</span>
@@ -101,6 +148,29 @@
     </a>
   </div>
 </footer>
-</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', 
+    {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        breakpoints: {
+            768: 
+            {
+                slidesPerView: 2, 
+                spaceBetween: 30
+            }
+        },
+
+        navigation: 
+        {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </body>
 </html>

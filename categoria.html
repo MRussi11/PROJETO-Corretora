@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis</title>
+    
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Tânia Sedrez</h1>
+        <h2>corretora</h2>
+    </header>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Imóveis</a>
+                <ul class="submenu">
+                    <li><a href="categoria.html?tipo=terreno">Terreno</a></li>
+                    <li><a href="categoria.html?tipo=baixo-padrao">Baixo padrão</a></li>
+                    <li><a href="categoria.html?tipo=medio-padrao">Médio padrão</a></li>
+                    <li><a href="categoria.html?tipo=alto-padrao">Alto padrão</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="pagina-categoria">
+        <h1 id="titulo-categoria">Carregando...</h1>
+        <div id="grid-imoveis-categoria" class="grid-imoveis">
+            </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i><span>Youtube</span></a>
+        </div>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="carrega-categoria.js"></script>
+</body>
+</html>
