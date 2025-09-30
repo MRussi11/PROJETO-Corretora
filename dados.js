@@ -57,9 +57,7 @@ const imoveis = [
         'Sala ampla',
         'Cozinha',
         'Sacada com churrasqueira',
-        'Lavabo'
-    ],
-    'Serviços': [
+        'Lavabo',
         'Área de serviço'
     ]
 } 
@@ -101,9 +99,6 @@ const imoveis = [
         '1 Closet',
         'Lavabo'
     ],
-    'Serviços': [
-        'Área de serviço'
-    ]
 } 
     },
     {
@@ -139,9 +134,6 @@ const imoveis = [
         '1 Closet',
         'Lavabo'
     ],
-    'Serviços': [
-        'Área de serviço'
-    ]
 } 
     },
     {
@@ -176,9 +168,6 @@ const imoveis = [
         '1 Sala',
         '1 Closet',
         'Lavabo'
-    ],
-    'Serviços': [
-        'Área de serviço'
     ]
 } 
     }
