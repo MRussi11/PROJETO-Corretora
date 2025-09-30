@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function()
         {
         document.title = imovel.titulo;
 
-        // Preenche os elementos da página
         document.getElementById('imovel-titulo').textContent = imovel.titulo;
         document.getElementById('imovel-imagem-principal').src = imovel.imagemPrincipal;
         document.getElementById('imovel-imagem-principal').alt = imovel.titulo;
