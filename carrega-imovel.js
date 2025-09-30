@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function()
         document.getElementById('imovel-quartos').textContent = imovel.detalhes.quartos;
         document.getElementById('imovel-banheiros').textContent = imovel.detalhes.banheiros;
         document.getElementById('imovel-vagas').textContent = imovel.detalhes.vagas;
-        document.getElementById('imovel-area').textContent = imovel.detalhes.area;
+        document.getElementById('imovel-area-util').textContent = imovel.detalhes.areaUtil;   
+        document.getElementById('imovel-area-total').textContent = imovel.detalhes.areaTotal; 
 
         const galeria = document.getElementById('imovel-galeria');
         imovel.outrasFotos.forEach(fotoSrc => {
@@ -32,7 +33,24 @@ document.addEventListener('DOMContentLoaded', function()
             });
             galeria.appendChild(img);
         });
-        
+     const caracteristicasGrid = document.getElementById('imovel-caracteristicas-grid');
+        if (imovel.caracteristicas) {
+            for (const categoria in imovel.caracteristicas) {
+                const coluna = document.createElement('div');
+                coluna.className = 'caracteristica-coluna';
+
+                let itensHtml = '';
+                imovel.caracteristicas[categoria].forEach(item => {
+                    itensHtml += `<li>${item}</li>`;
+                });
+
+                coluna.innerHTML = `
+                    <h4>${categoria}</h4>
+                    <ul>${itensHtml}</ul>
+                `;
+                caracteristicasGrid.appendChild(coluna);
+            }
+        }   
     } else {
         const container = document.querySelector('.imovel-detalhes-container');
         container.innerHTML = "<h1>Imóvel não encontrado!</h1><p>O imóvel que você está procurando não existe ou foi removido.</p>";

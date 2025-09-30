@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function()
 {
     const titulos = {
         'terreno': 'Terrenos',
-        'baixo-padrao': 'Imóveis de Baixo Padrão',
         'medio-padrao': 'Imóveis de Médio Padrão',
         'alto-padrao': 'Imóveis de Alto Padrão'
     };
